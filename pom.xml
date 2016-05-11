@@ -54,7 +54,7 @@
 				<configuration>
 					<archive>
 						<manifest>
-							<mainClass>com.mapreduce.wordcount.App</mainClass>
+							<mainClass>com.mapreduce.wordcount.WordCount</mainClass>
 						</manifest>
 					</archive>
 				</configuration>
