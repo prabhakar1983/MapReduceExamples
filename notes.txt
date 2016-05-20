@@ -1,0 +1,15 @@
+Start:
+	start-dfs.sh
+	start-yarn.sh
+
+Input file upload:
+	hadoop fs -put files/word_count.txt word_count.txt
+
+Run a MapReduce Job:
+	hadoop jar target/WordCount-0.0.1-SNAPSHOT.jar word_count.txt word_count_output.txt
+ 
+Get the Output File:
+	hdfs dfs -get word_count_output.txt output.txt
+
+Read the Ouput:
+	cat output.txt/part-r-00000 
